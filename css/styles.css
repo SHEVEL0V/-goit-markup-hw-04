@@ -386,6 +386,8 @@ body {
 /* --------------footer------------- */
 .fon-footer{
     background-color: #2F303A;
+    width: 1600px;
+    margin: 0 auto;
 
     padding-top: 60px;
     padding-bottom: 60px;}
