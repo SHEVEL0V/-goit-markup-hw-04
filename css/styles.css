@@ -144,7 +144,7 @@ body {
         margin: 0 auto;
         padding: 200px 0;
 
-        background-image:url(./images/fon.jpg);
+        background-image: url("./images/fon.jpg")
         }
   
     .button-container{
@@ -212,7 +212,7 @@ body {
  }
  .quality-item li{
      width: 270px;
-     margin-left: 30px;.
+     margin-left: 30px;
     
  }
  .quality-item li:first-child{ margin-left: 0;}
@@ -269,7 +269,7 @@ body {
 .team-fon{
     width: 1600px;
     margin: 0 auto;
-    background-color: var(--color-fon);
+    background-color:#F5F4FA;
 }
 .team-title{
     margin-bottom: 50px;
@@ -282,15 +282,18 @@ body {
     color: var(--color-head-basic);
 }
 .team-title-items{
-    display: flex;}
+    display: flex;
+    }
 
 .team-title-item{
+    
     margin-left: 30px;} 
 .team-title-item:first-child{
     margin-left: 0;
 }
-.team-title-item li img{
+.team-title-items li img{
     display: block;
+    box-sizing: border-box;
 } 
 
  .team-titles{
@@ -347,6 +350,7 @@ body {
     border: 1px solid;
     border-radius: 4px;
     cursor: pointer;}
+    
 
 .client-lisl li a{
     border-color: var(--icon-color);
