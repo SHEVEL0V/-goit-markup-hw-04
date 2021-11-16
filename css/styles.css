@@ -323,10 +323,10 @@ body {
     display: flex;
 }
 
-.team-social-icon-color a:hover,
-.team-social-icon-color a:focus{
+.team-social-icon-color:hover,
+.team-social-icon-color:focus{
     background-color: var(--color-head-second);
-    color: var(--background-color-body);
+    --color-social: #241863;
 }
 
     /*----Постоянные клиенты----  */
