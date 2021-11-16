@@ -322,11 +322,15 @@ body {
 .team-icon-items{
     display: flex;
 }
+.team-social-icon-color{
+    color:var(--icon-color);
+}
+    
 
 .team-social-icon-color:hover,
 .team-social-icon-color:focus{
     background-color: var(--color-head-second);
-    --color-social: #241863;
+    --color-social: #9d97bb;
 }
 
     /*----Постоянные клиенты----  */
