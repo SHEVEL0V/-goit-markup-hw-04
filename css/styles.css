@@ -330,7 +330,11 @@ body {
     display: flex;
 }
 
-.team-social-icon-color :hover,
+.team-social-icon-color a{
+    color: var(--icon-color);
+}
+
+.team-social-icon-color a:hover,
 .team-social-icon-color a:focus{
     background-color: var(--color-head-second);
     color: var(--background-color-body);
@@ -469,6 +473,7 @@ body {
 
 
 .footer-icon-items a{
+    position: relative;
     color: var(--icon-color);
     background-color:var(--icon-color-fon)
 }
@@ -478,7 +483,12 @@ body {
     color: var(--background-color-body)
 }
 .social-icon{
---color-social:currentcolor;
+    --color-social:currentcolor;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 
 }
 
