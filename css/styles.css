@@ -142,8 +142,13 @@ body {
         max-width: 1600px;
         margin: 0 auto;
         padding: 200px 0;
-
-        background-image:url("../images/fon.jpg")
+        
+        background-image:
+        url("../images/fon.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
         }
   
     .button-container{
@@ -175,7 +180,7 @@ body {
     text-align: center;
     
     cursor: pointer;
-
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -322,22 +327,22 @@ body {
 .team-icon-items{
     display: flex;
 }
-.team-social-icon-color{
-    color:var(--icon-color);
-}
-    
 
-.team-social-icon-color:hover,
-.team-social-icon-color:focus{
+.team-social-icon-color :hover,
+.team-social-icon-color a:focus{
     background-color: var(--color-head-second);
-    --color-social: #9d97bb;
+    color: var(--background-color-body);
 }
 
     /*----Постоянные клиенты----  */
 .client-list{
     display: flex;
 }
+
 .client-list li{
+    display: flex;
+}
+.client-list li a{
     position: relative;
 
     box-sizing: border-box;
@@ -346,15 +351,11 @@ body {
     height: 92px;
     border: 1px solid;
     border-radius: 4px;
-    cursor: pointer;}
-    
+    cursor: pointer;
 
-.client-list li a{
     border-color: var(--icon-color);
     color: var(--icon-color);}
     
-.client-list li:hover,
-.client-list li:focus,
 .client-list li a:hover,
 .client-list li a:focus{
     border-color: var(--color-head-second);
@@ -452,32 +453,29 @@ body {
 .social-icon-items li:last-child{
     margin-right: 0px;
 }
-.social-icon-items li{
-    position: relative;
+.social-icon-items a {
+    display: flex;
+    justify-content: center;
 
-    margin-right: 10px;
-    cursor: pointer;
-
-    box-sizing: border-box;
+    border-radius: 50%;
     width: 44px;
     height: 44px;
-    border-radius: 50%;}
+    margin-right: 10px;
+
+    cursor: pointer
+    }
+
+
 .footer-icon-items a{
-    color: var(--background-color-body);
-}
-.footer-icon-items{
     background-color: var(--color-content);
 }
-.footer-icon-items:hover,
-.footer-icon-items:focus{
+.footer-icon-items a:hover,
+.footer-icon-items a:focus{
     background-color: var(--color-head-second);
 }
 .social-icon{
-    --color-social:currentcolor;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+--color-social:currentcolor;
+
 }
 
 /* ********************************************************** */
@@ -507,10 +505,11 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
 
+    border:0;
+
     color: var(--color-head-basic);
     background-color: var(--background-color-body);
-    border-color: inherit;
-    border-radius: 4px;
+   
     
 }
 .portfolio-button:hover,
@@ -531,8 +530,11 @@ body {
 
 .portfolio-item:hover{
     box-shadow: 1px 4px 6px 0px #00000029;
+
     box-shadow: 0px 4px 4px 0px #0000000F;
+    
     box-shadow: 0px 1px 1px 0px #0000001F;
+    
     }
 
 .portfolio-item a img{
