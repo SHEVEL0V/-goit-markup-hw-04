@@ -6,6 +6,8 @@
 --color-head-second:#2196F3;
 --color-fon: #F5F4FA;
 --icon-color:#AFB1B8;
+--icon-color-fon: #FFFFFF1A;
+
 
 }
 
@@ -467,11 +469,13 @@ body {
 
 
 .footer-icon-items a{
-    background-color: var(--color-content);
+    color: var(--icon-color);
+    background-color:var(--icon-color-fon)
 }
 .footer-icon-items a:hover,
 .footer-icon-items a:focus{
     background-color: var(--color-head-second);
+    color: var(--background-color-body)
 }
 .social-icon{
 --color-social:currentcolor;
