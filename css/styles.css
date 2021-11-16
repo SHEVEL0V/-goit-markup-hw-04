@@ -125,7 +125,8 @@ body {
         color: var(--color-head-basic);
     }
     .link-color{
-     color: var(--color-content )}
+        display: flex;
+        color: var(--color-content )}
     
      .nav-color:hover,
      .nav-color:focus,
@@ -196,9 +197,8 @@ body {
    }  
   .quality-icon {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
     
 }  
  .quality-title-none{ display: none}
@@ -264,9 +264,7 @@ body {
      
  /* команда */
 .team-fon{
-    width: 1600px;
-    margin: 0 auto;
-    background-color:#F5F4FA;
+ 
 }
 .team-title{
     margin-bottom: 50px;
@@ -327,17 +325,17 @@ body {
     display: flex;
 }
 
-.team-social-icon-color:hover,
-.team-social-icon-color:focus{
+.team-social-icon-color a:hover,
+.team-social-icon-color a:focus{
     background-color: var(--color-head-second);
     color: var(--background-color-body);
 }
 
     /*----Постоянные клиенты----  */
-.client-lisl{
+.client-list{
     display: flex;
 }
-.client-lisl li{
+.client-list li{
     position: relative;
 
     box-sizing: border-box;
@@ -349,14 +347,14 @@ body {
     cursor: pointer;}
     
 
-.client-lisl li a{
+.client-list li a{
     border-color: var(--icon-color);
     color: var(--icon-color);}
     
-.client-lisl li:hover,
-.client-lisl li:focus,
-.client-lisl li a:hover,
-.client-lisl li a:focus{
+.client-list li:hover,
+.client-list li:focus,
+.client-list li a:hover,
+.client-list li a:focus{
     border-color: var(--color-head-second);
     color: var(--color-head-second);
     
