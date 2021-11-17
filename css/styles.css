@@ -196,16 +196,17 @@ body {
      height: 120px;
      border-radius: 4px;
      background-color:var(--color-fon);
+
+     display: flex;
+     justify-content: center;
     }
-   .quality-icon-container{
-    position: relative;
-   }  
-  .quality-icon {
-    position: absolute;
-    display: flex;
-    justify-content: center;
+  
+ 
+  
+ 
+   
     
-}  
+ 
  .quality-title-none{ display: none}
 
  .quality-item{
