@@ -193,18 +193,17 @@ body {
  /* наши качества */
  .quality-icon-container{
     
-     height: 120px;
+     padding: 25px 0;
+
      border-radius: 4px;
      background-color:var(--color-fon);
 
-     display: flex;
-     justify-content: center;
-    }
-  
- 
-  
- 
-   
+    display: flex;
+    justify-content: center;
+     }
+
+  .quality-icon{
+      box-sizing: border-box; }  
     
  
  .quality-title-none{ display: none}
@@ -284,6 +283,7 @@ body {
 }
 .team-title-items{
     display: flex;
+    box-sizing: border-box;
     }
 
 .team-title-item{
@@ -316,7 +316,8 @@ body {
     letter-spacing: 0.03em}
 
  .team-title-item-border{
-    padding: 30px 32px;
+    box-sizing: border-box;
+    padding: 30px 0;
 
     background-color: var(--background-color-body);
 
@@ -332,13 +333,13 @@ body {
 }
 
 .team-social-icon-color a{
-    color: var(--icon-color);
+    fill: var(--icon-color);
 }
 
 .team-social-icon-color a:hover,
 .team-social-icon-color a:focus{
     background-color: var(--color-head-second);
-    color: var(--background-color-body);
+    fill: var(--background-color-body);
 }
 
     /*----Постоянные клиенты----  */
@@ -346,14 +347,21 @@ body {
     display: flex;
 }
 
-.client-list li{
+.client-lisl li{
     display: flex;
+    
 }
-.client-list li a{
-    position: relative;
+
+.client-list a{
+    margin-right: 30px;
+    padding: 16px 0;
+
+    
+    display: flex;
+    justify-content: center;
 
     box-sizing: border-box;
-    margin-right: 30px;
+    
     width: 170px;
     height: 92px;
     border: 1px solid;
@@ -362,6 +370,9 @@ body {
 
     border-color: var(--icon-color);
     color: var(--icon-color);}
+
+.client-lisl a:last-child{
+        margin-right: 0px; }
     
 .client-list li a:hover,
 .client-list li a:focus{
@@ -369,14 +380,9 @@ body {
     color: var(--color-head-second);
     
 }
-.client-lisl li:last-child{
-    margin-right: 0px;
-}
+
+
 .client-icon{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
 
     --color1:currentcolor
     
@@ -395,7 +401,7 @@ body {
 /* --------------footer------------- */
 .fon-footer{
     background-color: #2F303A;
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 
     padding-top: 60px;
@@ -455,7 +461,12 @@ body {
 }
 .social-icon-items {
     display: flex;
+    justify-content: center;
+
     
+}
+.social-icon-items li{
+    margin-right: 10px;
 }
 .social-icon-items li:last-child{
     margin-right: 0px;
@@ -467,7 +478,7 @@ body {
     border-radius: 50%;
     width: 44px;
     height: 44px;
-    margin-right: 10px;
+    
 
     cursor: pointer
     }
