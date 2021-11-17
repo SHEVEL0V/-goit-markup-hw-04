@@ -326,20 +326,29 @@ body {
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
  }   
-/*-----social------ */
+/*-----social icon--------------- */
+
 .team-profession
 .team-icon-items{
     display: flex;
 }
+.team-social-icon-color{
+    position: relative;
+}
+
 
 .team-social-icon-color a{
-    fill: var(--icon-color);
+
+    
+
+    color:var(--icon-color);
+    
 }
 
 .team-social-icon-color a:hover,
 .team-social-icon-color a:focus{
     background-color: var(--color-head-second);
-    fill: var(--background-color-body);
+    color: var(--background-color-body);
 }
 
     /*----Постоянные клиенты----  */
