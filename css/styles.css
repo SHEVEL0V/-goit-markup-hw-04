@@ -144,9 +144,11 @@ body {
         max-width: 1600px;
         margin: 0 auto;
         padding: 200px 0;
-        
-        background-image:
-        url("../images/fon.jpg");
+        background: #2F303A66;
+
+        background-image:linear-gradient(to right,#2F303A66,#2F303A66),
+       url("../images/fon.jpg");
+
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -449,7 +451,7 @@ body {
  .address-tel
   {color: rgba(255, 255, 255, 0.6)}  
 
-/*********** ---соцсети--- *************/
+/*********** ---иконки соцсетей--- *************/
 .footer-icon-container{
     padding-top: 12px;
 }
