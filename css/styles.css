@@ -336,10 +336,7 @@ body {
     position: relative;
 }
 
-
 .team-social-icon-color a{
-
-    
 
     color:var(--icon-color);
     
@@ -533,7 +530,8 @@ body {
     margin-right: 8px;  
     padding: 6px 22px;
 
-    Font: Roboto;
+    color: var(--color-head-basic);
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -541,10 +539,9 @@ body {
     letter-spacing: 0.03em;
 
     border:0;
-
-    color: var(--color-head-basic);
     background-color: var(--background-color-body);
-   
+    
+    
     
 }
 .portfolio-button:hover,
