@@ -193,37 +193,32 @@ body {
  }
 
  /* наши качества */
- .quality-icon-container{
-    
-     padding: 25px 0;
-
-     border-radius: 4px;
-     background-color:var(--color-fon);
-
-    display: flex;
-    justify-content: center;
-     }
-
-  .quality-icon{
-      box-sizing: border-box; }  
-    
- 
  .quality-title-none{ display: none}
 
  .quality-item{
-     display: flex;
-     
- }
- .quality-item li{
-     width: 270px;
-     margin-left: 30px;
-    
- }
- .quality-item li:first-child{ margin-left: 0;}
+    display: flex;}
 
- .quality-text-container{
-     padding-top: 30px;
- }
+ .quality-item li{ margin-left: 30px;}
+        
+.quality-item li:first-child{ margin-left: 0;}
+
+.quality-icon-container{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 270px;
+    height: 120px;
+
+    margin-bottom: 30px;
+    
+    
+    background-color: var(--color-fon);
+ 
+
+     }
+ 
  .quality-title{
     margin-bottom: 10px;
 
@@ -271,6 +266,7 @@ body {
      
  /* команда */
 .team-fon{
+    background-color: var(--color-fon);
  
 }
 .team-title{
@@ -355,48 +351,40 @@ body {
     display: flex;
 }
 
-.client-lisl li{
-    display: flex;
-    
+.client-item{
+    margin-right: 30px;    
 }
+.client-item:last-child{
+    margin-right: 0px; }
 
-.client-list a{
-    margin-right: 30px;
-    padding: 16px 0;
-
-    
+.client-list a{ 
     display: flex;
     justify-content: center;
-
-    box-sizing: border-box;
+    align-items: center;
     
+    cursor: pointer;
+
+    border-color: var(--icon-color);
+    color: var(--icon-color);
+
     width: 170px;
     height: 92px;
     border: 1px solid;
     border-radius: 4px;
-    cursor: pointer;
 
-    border-color: var(--icon-color);
-    color: var(--icon-color);}
-
-.client-lisl a:last-child{
-        margin-right: 0px; }
+}
     
 .client-list li a:hover,
 .client-list li a:focus{
     border-color: var(--color-head-second);
     color: var(--color-head-second);
-    
 }
-
-
 .client-icon{
 
     --color1:currentcolor
-    
 }
  .client-title{
-     margin-bottom: 50px;
+    margin-bottom: 50px;
 
     font-weight: bold;
     font-size: 36px;
@@ -409,7 +397,7 @@ body {
 /* --------------footer------------- */
 .fon-footer{
     background-color: #2F303A;
-    max-width: 1600px;
+    
     margin: 0 auto;
 
     padding-top: 60px;
@@ -470,7 +458,6 @@ body {
 .social-icon-items {
     display: flex;
     justify-content: center;
-
     
 }
 .social-icon-items li{
@@ -482,6 +469,7 @@ body {
 .social-icon-items a {
     display: flex;
     justify-content: center;
+    align-items: center;
 
     border-radius: 50%;
     width: 44px;
@@ -493,8 +481,12 @@ body {
 
 
 .footer-icon-items a{
-    position: relative;
-    color: var(--icon-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+    color: var(--background-color-body);
     background-color:var(--icon-color-fon)
 }
 .footer-icon-items a:hover,
@@ -505,10 +497,7 @@ body {
 .social-icon{
     --color-social:currentcolor;
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%)
+  
 
 }
 
@@ -541,8 +530,8 @@ body {
     letter-spacing: 0.03em;
 
     border:0;
-    background-color: var(--background-color-body);
-    
+    background-color: var(--color-fon);
+    border-radius: 4px;
     
     
 }
@@ -552,7 +541,7 @@ body {
     background-color: var(--color-head-second);
     color: var(--background-color-body);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;
+    
     border-color: var(--color-head-second);
 }
 
@@ -562,15 +551,17 @@ body {
     flex-wrap:wrap;}
 
 
-.portfolio-item:hover{
-    box-shadow: 1px 4px 6px 0px #00000029;
+.portfolio-item:hover,
+.portfolio-item:focus{
+    box-shadow: 2px 6px 8px 2px #00000029;
 
-    box-shadow: 0px 4px 4px 0px #0000000F;
-    
-    box-shadow: 0px 1px 1px 0px #0000001F;
+    box-shadow: 0px 6px 6px 2px #0000000F;
+
+    box-shadow: 0px 2px 2px 2px #0000001F;
+
     
     }
-
+.portfolio-item{ box-sizing: border-box;}
 .portfolio-item a img{
    display: block;
 }
